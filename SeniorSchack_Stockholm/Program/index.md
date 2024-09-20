@@ -1,9 +1,9 @@
 | Dag | Schacksalongerna                        | Rioträffen  |
 |-----|-----------------------------------------|-------------|
 | Mån |                                         | 09.00-15.15 |
-| Tis | [Schackträning](Schackträning.html)     | 09.00-15.15 |
-| Ons | [Seniorserien](Seniorserien.html)       | 09.00-15.15 |
-| Tor | [Klubbmästerskap](Klubbmästerskap.html) | 09.00-15.15 |
+| Tis | [Schackträning](Schackträning)          | 09.00-15.15 |
+| Ons | [Seniorserien](Seniorserien)            | 09.00-15.15 |
+| Tor | [Klubbmästerskap](Klubbmästerskap)      | 09.00-15.15 |
 | Fre |                                         | 09.00-15.15 |
 
 Schacksalongerna:
@@ -11,3 +11,4 @@ Schacksalongerna:
 
 Rioträffen:
 [Sandhamnsgatan 4](https://maps.app.goo.gl/QcKuataRc74koJP39) **T-bana Gärdet** 
+ 

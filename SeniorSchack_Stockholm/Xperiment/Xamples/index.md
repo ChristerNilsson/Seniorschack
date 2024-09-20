@@ -6,7 +6,7 @@ Ctrl+U to see the html code.
 
 ---
 
-![Text](/ROOT/favicon.ico)
+![Text](favicon.ico)
 
 **Bold**
 

@@ -13,3 +13,4 @@
 |[Styrelsemöte 26:e april 2012](HTM/Protokoll_SrS_2012_04_26.pdf)|
 |[Styrelsemöte 1:a mars 2012](HTM/SrS_Protokoll_1_mars_2012.pdf)|
 |[Styrelsemöte 12:e januari 2012](HTM/Protokoll_SrS_2012_01_12.pdf)|
+ 

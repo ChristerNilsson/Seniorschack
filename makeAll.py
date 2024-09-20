@@ -4,46 +4,7 @@ from markdown_it import MarkdownIt
 import json
 from datetime import datetime
 
-#####
-
-import subprocess
-
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
-
-# Skicka ett objekt som indata
-# input_data = json.dumps({"message": "Hello", "count": 5})
-# result = subprocess.run(["node", "script.js", input_data], capture_output=True, text=True)
-# print(result.stdout)
-
-# {div,dubbel,echo} = require './lib'
-
-# echo div div "pelle #{dubbel 7}"
-
-
-# 1 Läs adam.text
-with open("adam.text") as f:
-	t = f.read()
-	print(t)
-	
-# 2 Skriv adam.coffee
-with open("adam.coffee","w") as g:
-	s = '{div,dubbel,echo} = require "./lib"'
-	s += "\necho " + t
-	print(s)
-	g.write(s)
-
-# 3 Kör "coffee adam.coffee"
-# path = "coffee adam.coffee"
-
-result = subprocess.run(["cmd", "/c", "coffee adam.coffee"], capture_output=True, text=True)
-
-print(result.stdout)
-	
-# 4 Skriv adam.html
-with open("./adam.html","w") as g:
-	g.write(result.stdout)
-
-#####
 
 mdit = MarkdownIt('commonmark', {'breaks':True,'html':True}).enable('table')
 
@@ -216,3 +177,43 @@ start = time.time_ns()
 transpileDir(ROOT)
 print(round((time.time_ns() - start)/10**6),'ms')
 print()
+
+## Graveyard
+
+#####
+# import subprocess
+# Skicka ett objekt som indata
+# input_data = json.dumps({"message": "Hello", "count": 5})
+# result = subprocess.run(["node", "script.js", input_data], capture_output=True, text=True)
+# print(result.stdout)
+
+# {div,dubbel,echo} = require './lib'
+
+# echo div div "pelle #{dubbel 7}"
+
+
+# 1 Läs adam.text
+# with open("adam.text") as f:
+# 	t = f.read()
+# 	print(t)
+	
+# 2 Skriv adam.coffee
+# with open("adam.coffee","w") as g:
+# 	s = '{div,dubbel,echo} = require "./lib"'
+# 	s += "\necho " + t
+# 	print(s)
+# 	g.write(s)
+
+# 3 Kör "coffee adam.coffee"
+# path = "coffee adam.coffee"
+
+# result = subprocess.run(["cmd", "/c", "coffee adam.coffee"], capture_output=True, text=True)
+
+# print(result.stdout)
+	
+# 4 Skriv adam.html
+# with open("./adam.html","w") as g:
+# 	g.write(result.stdout)
+
+#####
+

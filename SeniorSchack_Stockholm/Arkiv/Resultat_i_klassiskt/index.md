@@ -1,5 +1,5 @@
-| År   | Segrare                                                                   | Resultat                                                                                   |
-|------|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| År| Segrare | Resultat |
+|---|---------|----------|
 | 2024 | Lennart B. Johansson (Regerande Seniorseriemästare våren 2024)            | [Resultat VT24](TOUR=13627)                                                                |
 | 2024 | Resultat från samtliga Veteranserier våren 2024                           | [Resultat VT24](SENIOR/htmfiler/resultat_VT24.pdf)                                         |
 | 2024 | Tomas Lindblad (Regerande Klubbmästare 2024)                              | [Resultatlista KM 2024](SENIOR/htmfiler/SrS_KM_2024_Interim_Ranking_List.pdf)              |

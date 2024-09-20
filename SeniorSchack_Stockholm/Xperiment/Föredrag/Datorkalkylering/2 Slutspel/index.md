@@ -4,7 +4,7 @@ De räknas ut inom någon millisekund.
 
 Vi kommer här att se närmare på KRK, dvs Kung och torn mot ensam Kung.
 
-* Filerna [krk_black](http://tablebase.sesse.net/3-4-5/krk.nbb.emd) och [krk_white](http://tablebase.sesse.net/3-4-5/krk.nbw.emd) innehåller cirka 28.000 positioner.
+* Filerna http://tablebase.sesse.net/3-4-5/krk.nbb.emd och http://tablebase.sesse.net/3-4-5/krk.nbw.emd innehåller cirka 28.000 positioner.
 
 * För varje position anges antal halvdrag till matt 
 * För att hitta det bästa draget måste man
@@ -12,11 +12,13 @@ Vi kommer här att se närmare på KRK, dvs Kung och torn mot ensam Kung.
     * Söka upp dessa positioner i filen och få fram antal halvdrag till matt.
     * Välja det bästa draget. 
 
-Exempel  
+Exempel 
 
 [Ke5 Re6 Kh8](https://syzygy-tables.info/?fen=7k/8/4R3/4K3/8/8/8/8_w_-_-_0_1)
 
 ## Exempel på innehåll i filerna KRK
+
+[KRk.txt](Krk.txt) visar positionerna samt antal halvdrag till matt. T ex a1a2c1 7
 
 Filerna innehåller ej dragen och är binärfiler.  
 Man måste använda ett speciellt program där man går in med var och en av positionerna man vill slå upp. T ex returnerar Kf6, dvs "f6e6h8", värdet 6.  

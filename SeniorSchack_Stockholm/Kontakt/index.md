@@ -35,5 +35,4 @@ Avgiften betalas till klubbens bankgiro nr. **111-1038**
 
 ## Webmaster
 
-[Lars Johan Andersson](BB2?md5=9tA9nxUm5e)
- 
+[Lars Johan Andersson](BB2?md5=9tA9nxUm5e) 

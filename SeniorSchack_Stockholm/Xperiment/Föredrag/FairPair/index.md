@@ -40,3 +40,12 @@ Starkaste spelaren längst upp till vänster. Cellerna indikerar rondnummer.
 Hundbenet.
 
 ![FairPair 78](X_FairPair_78.png)
+
+#### Utvecklingstakt
+
+[Arvid Fridman 2019](https://ratings.fide.com/calculations.phtml?id_number=1758632&period=2019-12-01&rating=0) 6.3 elo per klassiskt parti.  
+[Ram Srinivasson 2024](https://ratings.fide.com/profile/1779249/chart) 8.3 elo per klassiskt parti
+En turnering med sju ronder kan alltså ge en ökning på 58 elo.  
+5 av 7 (= 71%) mot lika starka spelare, ger 3 * 20 = 60 elo.  
+7 av 7 (=100%) mot lika starka spelare, ger 7 * 20 = 140 elo.  
+Man behöver alltså inte möta spelare som är flera hundra elos starkare för att avancera snabbt.

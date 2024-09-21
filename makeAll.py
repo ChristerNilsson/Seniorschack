@@ -72,30 +72,30 @@ def getLink(f):
 
 def makeMenu(href,title): return [title, href]
 
-def splitSlides(filename):
-	print('splitSlides',filename)
-	with open(filename, 'r', encoding='utf8') as f:
-		lines = f.readlines()
-	files = []
-	res = ['index']
-	for line in lines:
-		line = line.rstrip("\n")
-		if line.startswith('# '):
-			files.append(res)
-			res = [line[2:].replace(' ','_')]
-		else:
-			res.append(line)
-	files.append(res)
-	for file in files:
-		filename1 = filename.replace('slides.md',file[0] + '.md')
-		with open(filename1, 'w', encoding='utf8') as g:
-			if file[0] == 'index':
-				g.write("| |\n")
-				g.write("|-|\n")
-				for item in files[1:]:
-					g.write(f"|[{item[0].replace('_',' ')}]({item[0]}.html)|\n")
-			else:
-				g.write("\n".join(file[1:]))
+# def splitSlides(filename):
+# 	print('splitSlides',filename)
+# 	with open(filename, 'r', encoding='utf8') as f:
+# 		lines = f.readlines()
+# 	files = []
+# 	res = ['index']
+# 	for line in lines:
+# 		line = line.rstrip("\n")
+# 		if line.startswith('# '):
+# 			files.append(res)
+# 			res = [line[2:].replace(' ','_')]
+# 		else:
+# 			res.append(line)
+# 	files.append(res)
+# 	for file in files:
+# 		filename1 = filename.replace('slides.md',file[0] + '.md')
+# 		with open(filename1, 'w', encoding='utf8') as g:
+# 			if file[0] == 'index':
+# 				g.write("| |\n")
+# 				g.write("|-|\n")
+# 				for item in files[1:]:
+# 					g.write(f"|[{item[0].replace('_',' ')}]({item[0]}.html)|\n")
+# 			else:
+# 				g.write("\n".join(file[1:]))
 
 def transpileDir(directory, level=0):
 	if type(directory) is str:
@@ -118,9 +118,9 @@ def transpileDir(directory, level=0):
 
 	indexHtml = ""
 
-	for f in os.scandir(path):
-		if os.path.isfile(f) and f.name.endswith('slides.md'):
-			splitSlides(f.path) # måste köras före .md => .html
+	# for f in os.scandir(path):
+	# 	if os.path.isfile(f) and f.name.endswith('slides.md'):
+	# 		splitSlides(f.path) # måste köras före .md => .html
 
 	for f in os.scandir(path):
 		if os.path.isfile(f) and f.name.endswith('.md'):

@@ -72,31 +72,6 @@ def getLink(f):
 
 def makeMenu(href,title): return [title, href]
 
-# def splitSlides(filename):
-# 	print('splitSlides',filename)
-# 	with open(filename, 'r', encoding='utf8') as f:
-# 		lines = f.readlines()
-# 	files = []
-# 	res = ['index']
-# 	for line in lines:
-# 		line = line.rstrip("\n")
-# 		if line.startswith('# '):
-# 			files.append(res)
-# 			res = [line[2:].replace(' ','_')]
-# 		else:
-# 			res.append(line)
-# 	files.append(res)
-# 	for file in files:
-# 		filename1 = filename.replace('slides.md',file[0] + '.md')
-# 		with open(filename1, 'w', encoding='utf8') as g:
-# 			if file[0] == 'index':
-# 				g.write("| |\n")
-# 				g.write("|-|\n")
-# 				for item in files[1:]:
-# 					g.write(f"|[{item[0].replace('_',' ')}]({item[0]}.html)|\n")
-# 			else:
-# 				g.write("\n".join(file[1:]))
-
 def transpileDir(directory, level=0):
 	if type(directory) is str:
 		path = directory
@@ -109,7 +84,7 @@ def transpileDir(directory, level=0):
 
 	if name.endswith('.css'): return
 
-	name = (name.replace("_", " "))
+	name = name.replace("_", " ")
 
 	hash_html = []
 	hash_link = []
@@ -118,15 +93,11 @@ def transpileDir(directory, level=0):
 
 	indexHtml = ""
 
-	# for f in os.scandir(path):
-	# 	if os.path.isfile(f) and f.name.endswith('slides.md'):
-	# 		splitSlides(f.path) # måste köras före .md => .html
-
 	for f in os.scandir(path):
 		if os.path.isfile(f) and f.name.endswith('.md'):
-			if f.name.endswith('slides.md'):
-				pass
-			elif f.name == 'index.md':
+			# if f.name.endswith('slides.md'):
+			# 	pass
+			if f.name == 'index.md':
 				if done(f.path,f.path.replace('.md','.html')): continue
 				indexHtml = writeMD(f.path)
 			else:
@@ -151,7 +122,7 @@ def transpileDir(directory, level=0):
 	res += [[noExt(f.name),getLink(f.path)] for f in hash_link] 
 	res += [[noExt(f.name), f.name] for f in hash_others] 
 	for f in hash_directory: 
-		res += [[f.name, f.name]]
+		res += [[f.name.replace("_", " "), f.name]]
 		transpileDir(f, level + 1)
 
 	res.sort()
@@ -177,43 +148,3 @@ start = time.time_ns()
 transpileDir(ROOT)
 print(round((time.time_ns() - start)/10**6),'ms')
 print()
-
-## Graveyard
-
-#####
-# import subprocess
-# Skicka ett objekt som indata
-# input_data = json.dumps({"message": "Hello", "count": 5})
-# result = subprocess.run(["node", "script.js", input_data], capture_output=True, text=True)
-# print(result.stdout)
-
-# {div,dubbel,echo} = require './lib'
-
-# echo div div "pelle #{dubbel 7}"
-
-
-# 1 Läs adam.text
-# with open("adam.text") as f:
-# 	t = f.read()
-# 	print(t)
-	
-# 2 Skriv adam.coffee
-# with open("adam.coffee","w") as g:
-# 	s = '{div,dubbel,echo} = require "./lib"'
-# 	s += "\necho " + t
-# 	print(s)
-# 	g.write(s)
-
-# 3 Kör "coffee adam.coffee"
-# path = "coffee adam.coffee"
-
-# result = subprocess.run(["cmd", "/c", "coffee adam.coffee"], capture_output=True, text=True)
-
-# print(result.stdout)
-	
-# 4 Skriv adam.html
-# with open("./adam.html","w") as g:
-# 	g.write(result.stdout)
-
-#####
-

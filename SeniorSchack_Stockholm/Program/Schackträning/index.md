@@ -1,5 +1,3 @@
-Tisdagar 10.00-12.00
-
 ## September
 
 Ti 10 PO Hesselborn: Konsten att kalkylera, del 1 [Lösning](SrS_Veckans_Kluring_15_24_Lösning.pdf)

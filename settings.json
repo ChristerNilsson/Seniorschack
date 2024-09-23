@@ -2,7 +2,7 @@
 	"All" : true,
 	"showExt" : false,
 	"patches" : {
-		"ROOT" : "SeniorSchack_Stockholm",
+		"ROOT" : "Seniorschack_Stockholm",
 		"CLUB" : "https://member.schack.se/ShowClubRatingServlet?clubid",
 		"TOUR" : "https://member.schack.se/ShowTournamentServlet?id",
 		"HTM" : "SENIOR/htmfiler",

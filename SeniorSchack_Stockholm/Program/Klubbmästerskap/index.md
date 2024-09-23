@@ -1,5 +1,3 @@
-Torsdagar 11.00
-
 ## September
 
 To 12 Rond 1  

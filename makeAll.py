@@ -7,6 +7,7 @@ from datetime import datetime
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
 
 mdit = MarkdownIt('commonmark', {'breaks':True,'html':True}).enable('table')
+news = []
 
 with open("settings.json","r") as f:
 	settings = json.loads(f.read())
@@ -73,14 +74,17 @@ def getLink(f):
 def makeMenu(href,title): return [title, href]
 
 def transpileDir(directory, level=0):
+	global news
 	if type(directory) is str:
 		path = directory
 		name = directory
-		reverse = False
+		nyheter = False
+		dokument = False 
 	else:
 		path = directory.path
 		name = directory.name
-		reverse = path.endswith('\\Nyheter') or path.endswith('\\Dokument')
+		nyheter = path.endswith('\\Nyheter') 
+		dokument = path.endswith('\\Dokument')
 
 	if name.endswith('.css'): return
 
@@ -95,8 +99,6 @@ def transpileDir(directory, level=0):
 
 	for f in os.scandir(path):
 		if os.path.isfile(f) and f.name.endswith('.md'):
-			# if f.name.endswith('slides.md'):
-			# 	pass
 			if f.name == 'index.md':
 				if done(f.path,f.path.replace('.md','.html')): continue
 				indexHtml = writeMD(f.path)
@@ -126,12 +128,15 @@ def transpileDir(directory, level=0):
 		transpileDir(f, level + 1)
 
 	res.sort()
-	if reverse: res.reverse()
+	if nyheter or dokument: res.reverse()
 
-	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res]
+	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res if title != "Nyheter"]
 	res = "<table>\n" + "\n".join(res) + "\n</table>"
+	if nyheter: news = res
 
-	if level == 0: res += f'<div style="font-size:16px">{str(datetime.now())[:16]}</div>'
+	if level == 0: 
+		res += f'<div style="font-size:16px">{str(datetime.now())[:16]}</div>'
+		res += news
 
 	indexHtml = res if indexHtml == "" else indexHtml.replace("AUTO",res)
 	if indexHtml: wrapHtml('directory ' + name, path + '/index.html', name, level+1, indexHtml)

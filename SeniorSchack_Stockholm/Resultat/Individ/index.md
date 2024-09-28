@@ -6,3 +6,5 @@
 | [Klass 3](TOUR=14510)                                        |
 | [Klass 4](TOUR=14512)                                        |
 | [Stockholmsmästerskap Veteran 60+](https://chess-results.com/tnr990477.aspx?lan=6) |
+| [FairPair](FairPair)                                        |
+

@@ -32,7 +32,7 @@ Bekräfta med ☑️
 4. Om du valt **Annat** ovan:
 
 	||vänster|höger|
-	|:-:|:-:|:-:|
+	|:-:|-:|-:|
 	|grund|h:mm.ss|h:mm.ss|
 	|bonus|m.ss|m.ss|
 
@@ -40,13 +40,11 @@ Genom att hålla inne ☑️, kommer den att repeteras.
 
 5. Exempel: 10 + 5 (option 18)
 
-||h|m|m|s|s|h|m|m|s|s|
-|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|grund|0|1|0|0|0|0|1|0|0|0|
+||h|:|m|m|.|s|s||h|:|m|m|.|s|s|
+|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|grund|0|:|1|0|.|0|0||0|:|1|0|.|0|0|
+|bonus||||0|.|0|5|||||0|.|0|5|
 
-||m|s|s|m|s|s|
-|-|:-:|:-:|:-:|:-:|:-:|:-:|
-|bonus|0|0|5|0|0|5|
 
 Här använder du ➕ och ➖ samt ☑️ efter varje siffra.  
 Totalt trycker du 12 ggr på ➕ (om du startar på 0:00.00) och 16 ggr på ☑️.

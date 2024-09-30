@@ -39,13 +39,13 @@ eftersom de nu är tio spelare, dvs jämnt antal. (CN)
 3. Om oratade bara spelar med andra oratade, får de aldrig någon rating. (CN)
 4. Det blir fler remier om jämnare spelare möts. (CN)
 
-#### Schweizer 78
+#### Schweizer (78 spelare)
 
 Starkaste spelaren längst upp till vänster. Cellerna indikerar rondnummer.
 
 ![Schweizer 78](X_Schweizer_78.png)
 
-#### FairPair 78
+#### FairPair (78 spelare)
 
 Hundbenet.
 
@@ -63,9 +63,9 @@ Man behöver alltså inte möta spelare som är flera hundra elos starkare för 
 #### Varför sorterar Schweizer och FairPair olika ibland?
 
 Det beror på att Schweizer använder grövre metoder. 
-1. En vinst är alltid 1.0 oavsett om man slagit den bäste eller den sämste
+1. En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste
 2. FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo.  
 3. Särskiljning vid samma partipoäng.  
-	* Buchholz summerar motståndarnas poäng, även förlustpartierna.  
+	* Buchholz summerar motståndarnas poäng, även förlustpartierna. 
+		* Förlorar man mot en starkare är det bra för särskiljningen.
 	* FairPair behöver sällan särskiljning eftersom elotalen innehåller fler siffror.  
-

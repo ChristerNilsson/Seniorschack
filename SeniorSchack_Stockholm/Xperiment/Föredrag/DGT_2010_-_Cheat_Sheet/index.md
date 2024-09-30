@@ -1,50 +1,41 @@
-|Minska|Öka|Starta|OK|
-|:-:|:-:|:-:|:-:|
-|➖|➕|⏯️|☑️|
+*av [Christer Nilsson](https://christernilsson.github.io/SeniorSchack/SeniorSchack_Stockholm/Xperiment/F%C3%B6redrag/Christer%20Nilsson/)* 
+|Genomför:|Off|On|⏯️|
+|:-|-|-|-|
 
-Använd ➕ och ➖ för att ställa in rätt siffror.
-Bekräfta med ☑️
+Är tiden ok?
+* **Ja**: Starta med ⏯️
 
-0. Är rätt tid inställd på klockan?
-	1. **Off** (undersidan)
-	2. **On**
-	3. ⏯️
+* **Nej**: Vill du ställa in tiden själv?
 
-1. Om nekande svar, kontakta tävlingsledningen, eller fortsätt.
+	* **Nej**: Kontakta tävlingsledningen 
 
-2. Vill du spela *utan* bonus (inkrement) ?
+	* **Ja**: 
 
-	|m|option|
-	|:-:|:-:|
-	|5|1|
-	|25|2|
-	|**Annat**|3|
+		|Genomför:|Off|On|
+		|:-|-|-|
 
-3. Vill du spela *med* bonus?
+		|Använd därefter för varje siffra:|➖|➕|☑️|
+		|:-|-|-|-|
+		
+		Välj option:
 
-	|m + s|option|
-	|:-:|:-:|
-	|3 + 2|15|
-	|25 + 10|16|
-	|90 + 30|17|
-	|**Annat**|18|
+		* **1**: 5 minuter
+		* **2**: 25 minuter
+		* **3**: grund utan bonus
 
-4. Om du valt **Annat** ovan:
+			|10 minuter|h|:|m|m|.|s|s|
+			|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+			|grund vänster|0|:|1|0|.|0|0|
+			|grund höger|0|:|1|0|.|0|0|
 
-	||vänster|höger|
-	|:-:|-:|-:|
-	|grund|h:mm.ss|h:mm.ss|
-	|bonus|m.ss|m.ss|
+		* **15**: 3 minuter + 2 sekunder
+		* **16**: 25 minuter + 10 sekunder
+		* **17**: 90 minuter + 30 sekunder
+		* **18**: grund + bonus
 
-Genom att hålla inne ☑️, kommer den att repeteras.
-
-5. Exempel: 10 + 5 (option 18)
-
-||h|:|m|m|.|s|s||h|:|m|m|.|s|s|
-|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|grund|0|:|1|0|.|0|0||0|:|1|0|.|0|0|
-|bonus||||0|.|0|5|||||0|.|0|5|
-
-
-Här använder du ➕ och ➖ samt ☑️ efter varje siffra.  
-Totalt trycker du 12 ggr på ➕ (om du startar på 0:00.00) och 16 ggr på ☑️.
+			|10 minuter + 5 sekunder|h|:|m|m|.|s|s|
+			|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+			|grund vänster|0|:|1|0|.|0|0|
+			|grund höger|0|:|1|0|.|0|0|
+			|bonus vänster||||0|.|0|5|
+			|bonus höger||||0|.|0|5|

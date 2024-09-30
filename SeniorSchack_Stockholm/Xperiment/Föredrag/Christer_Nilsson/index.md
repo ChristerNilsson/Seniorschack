@@ -5,3 +5,4 @@
 * 2024 [Seniorschack Stockholms nya hemsida](https://christernilsson.github.io/SeniorSchack/SeniorSchack_Stockholm)
 * 2024 [FairPair](https://christernilsson.github.io/SeniorSchack/SeniorSchack_Stockholm/Xperiment/F%C3%B6redrag/FairPair/)
 * 2024 [DGT 2010 Cheat Sheet](https://christernilsson.github.io/SeniorSchack/SeniorSchack_Stockholm/Xperiment/F%C3%B6redrag/DGT_2010_-_Cheat_Sheet/)
+* 2022 [Round Robin](Round_Robin)

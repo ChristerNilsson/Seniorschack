@@ -1,5 +1,5 @@
 *av [Christer Nilsson](https://christernilsson.github.io/SeniorSchack/SeniorSchack_Stockholm/Xperiment/F%C3%B6redrag/Christer_Nilsson/)* 
-|Genomför:|Off|On|⏯️|
+|Genomför:|Off|On|☑️|
 |:-|-|-|-|
 
 Är tiden ok?

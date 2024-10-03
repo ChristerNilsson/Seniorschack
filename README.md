@@ -1,4 +1,4 @@
-[Try it!](https://christernilsson.github.io/SeniorSchack/SeniorSchack_Stockholm)
+[Try it!](https://christernilsson.github.io/Seniorschack/Seniorschack_Stockholm)
 
 * This program produces html files
 	* Using directory names and file names

@@ -1,4 +1,4 @@
-*av [Christer Nilsson](https://christernilsson.github.io/Seniorschack/Seniorschack_Stockholm/Xperiment/F%C3%B6redrag/Christer_Nilsson/)* 
+*av [Christer Nilsson](../Christer_Nilsson)* 
 |Genomför:|Off|On|☑️|
 |:-|-|-|-|
 

@@ -1,3 +1,5 @@
+[Turneringsprogrammet](https://christernilsson.github.io/FairPair)
+
 *FairPair har beskrivits som **Flytande Berger**.  
 Varje deltagare ligger i mitten av sin egen Bergergrupp*
 

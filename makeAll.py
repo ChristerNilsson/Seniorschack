@@ -46,6 +46,8 @@ def wrapHtml(original, filename, t, level, content=""):
 	res.append('	</head>')
 	res.append('<body>')
 
+	res.append('<img src="/bilder/SrS.jpg" width=50%>')
+
 	if os.path.exists(long_md):
 		res += [f'<h1><a href="{short_md}">{t}</a> </h1>']
 	else:

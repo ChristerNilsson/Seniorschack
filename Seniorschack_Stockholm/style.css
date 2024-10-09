@@ -43,7 +43,8 @@ sup {
 }
 
 .vinjett {
-	font-size:10vh;
+	font-size: 10vh;
+	/* font-weight: 5;  */
 	background-color: black;
 	color: white; 
 }

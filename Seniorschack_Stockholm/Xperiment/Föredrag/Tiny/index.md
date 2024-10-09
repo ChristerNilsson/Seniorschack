@@ -2,14 +2,13 @@
 	* python
 	* makeAll.py
 	* VS Code
-	* pyCharm
 	* Tanken är att all html genereras automatiskt då man sparar en fil.
 		* Dessutom uppdateras fönstret i din webläsare.
 * Publicera
 	* T ex till Github eller annan server
 * Katalogstrukturen motsvarar websidans struktur
 	* båda är träd
-	* Ge katalogerna vettiga namn, namnen kommer att synas
+	* Ge kataloger och filer vettiga namn, namnen kommer att synas!
 * Börja med katalogerna
 	* Kolla resultatet efter varje steg
 		* Kör makeAll.py automatiskt eller för hand.
@@ -28,10 +27,6 @@
 	* Gäller i de underliggande nivåerna
 	* testa t ex att ändra på någon färg
 
-Med detta i bakhuvudet gör jag här ett försök att bygga upp en statisk hemsida utgående från katalogstrukturen.
-
-Några high lights: 
-
 * Baserad på [markdown](https://www.markdownguide.org/cheat-sheet/).
 * Anpassad för mobiler och äldre.
 * Markdown kan ses för en sida genom att klicka på rubriken.
@@ -40,7 +35,6 @@ Några high lights:
 * Kronologisk sortering av Nyheter.
 * Bakåt-knappen används alltid för att lämna en sida. (Alt + Left Arrow)
 * Nya flikar skapas aldrig.
-* [RSS](https://sv.wikipedia.org/wiki/RSS) implementeras på begäran.
 * Open Source på [Github](https://github.com/ChristerNilsson/2023/blob/main/023B-SeniorSchack/makeAll.py)
 
 ## .md 

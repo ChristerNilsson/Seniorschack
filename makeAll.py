@@ -46,13 +46,16 @@ def wrapHtml(original, filename, t, level, content=""):
 	res.append('	</head>')
 	res.append('<body>')
 
-	# for i in reversed(range(level)):
-	res.append('<img src=' + (level-1) * '../' + 'X_bilder/SrS.jpg width=50%>')
-
-	if os.path.exists(long_md):
-		res += [f'<h1><a href="{short_md}">{t}</a> </h1>']
+	if level == 1:
+		res.append('<table>')
+		res.append('<tr class=vinjett height=100px><td ><img height=100px src=' + (level-1) * '../' + 'X_bilder/knight2.png ></td><td class=vinjett>Seniorschack Stockholm</td></tr>')
+		res.append('</table>')
+		# res.append('<h2>Seniorschack Stockholm</h2>')
 	else:
-		res += [f'<h1>{t}</h1>']
+		if os.path.exists(long_md):
+			res += [f'<h1><a href="{short_md}">{t}</a> </h1>']
+		else:
+			res += [f'<h1>{t}</h1>']
 
 	res += [content,'</body>','</html>']
 

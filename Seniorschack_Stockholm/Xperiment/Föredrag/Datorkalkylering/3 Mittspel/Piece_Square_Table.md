@@ -39,4 +39,5 @@
 	* Kd4, Rd5 och Re1
 	* Hur mycket ändras evalueringen av dessa?
 * Hur hanterar Jordans program detta slutspel?
-	* Hur få nivåer behöver sökas?
+	* Hur få nivåer behöver användas?
+* Hur skulle du vilja förbättra matriserna ovan?

@@ -50,7 +50,7 @@ def wrapHtml(original, filename, t, level, content=""):
 		res.append('<table>')
 		res.append('<tr class=vinjett height=100px><td>')
 		res.append('<a href="../Seniorschack_Stockholm/Xperiment/F%C3%B6redrag/Lewis_Chess_Men/">')
-		res.append("<img height=100px src=" + (level-1) * '../' + "X_bilder/knight2.png ></a>")
+		res.append("<img height=200px src=" + (level-1) * '../' + "X_bilder/knight2.png ></a>")
 		res.append("</td><td class=vinjett>Seniorschack Stockholm</td></tr>")
 		res.append('</table>')
 	else:
@@ -138,13 +138,13 @@ def transpileDir(directory, level=0):
 	res.sort()
 	if nyheter or dokument: res.reverse()
 
-	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res if title != "Nyheter"]
+	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res ] #if title != "Nyheter"]
 	res = "<table>\n" + "\n".join(res) + "\n</table>"
 	if nyheter: news = res
 
 	if level == 0: 
 		res += f'<div style="font-size:16px">{str(datetime.now())[:16]}</div>'
-		res += news
+		# res += news
 
 	indexHtml = res if indexHtml == "" else indexHtml.replace("AUTO",res)
 	if indexHtml: wrapHtml('directory ' + name, path + '/index.html', name, level+1, indexHtml)

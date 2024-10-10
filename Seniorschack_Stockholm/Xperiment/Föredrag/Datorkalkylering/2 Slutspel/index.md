@@ -18,7 +18,7 @@ Exempel
 
 ## Exempel på innehåll i filerna KRK
 
-[KRk.txt](Krk.txt) visar positionerna samt antal halvdrag till matt. T ex a1a2c1 7
+[KRk.txt](KRk.txt) visar positionerna samt antal halvdrag till matt. T ex a1a2c1 7
 
 Filerna innehåller ej dragen och är binärfiler.  
 Man måste använda ett speciellt program där man går in med var och en av positionerna man vill slå upp. T ex returnerar Kf6, dvs "f6e6h8", värdet 6.  

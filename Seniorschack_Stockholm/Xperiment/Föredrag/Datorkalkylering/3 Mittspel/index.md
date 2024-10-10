@@ -1,9 +1,9 @@
+*Datorschack består i princip av addition och subtraktion av heltal*
+
 Mittspelet är komplexare än öppningen och slutspelet.  
 Här måste alla drag genereras och ett träd genomsökas.  
 Att utvärdera ställningen i schack är komplicerat.  
-Dålig evaluering kan kompenseras med att söka djupare.  
-
-Datorschack består i princip endast av addition och subtraktion av heltal.  
+Svag evaluering kan kompenseras med att söka djupare.  
 
 ### Minimax 
 

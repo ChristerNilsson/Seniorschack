@@ -33,7 +33,7 @@
 	* Tornet värderas till 500 centipawns
 
 * Hur mycket ändras evalueringen av Kd4?
-* Hur mycket ändras evalueringen av Ra8?
+* Hur mycket ändras evalueringen av Rd8?
 * Hur mycket ändras evalueringen av Kg6?
 * Vits tre bästa drag är:
 	* Kd4, Rd5 och Re1

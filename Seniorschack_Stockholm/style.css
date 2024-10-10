@@ -16,6 +16,7 @@ a {
 h1 a {
 	color:white; 
 	background-color: black; 
+	margin-bottom: -20px;
 }
 
 div {
@@ -24,6 +25,7 @@ div {
 
 table {
 	font-size:24px;
+	margin-top: 0px;
 }
 
 th {

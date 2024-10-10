@@ -11,7 +11,7 @@ Svag evaluering kan kompenseras med att söka djupare.
 
 ### Evaluering i schack
 
-* Material (t ex 100,N=280,B=350,R=500,Q=900)
+* Material (t ex P=100,N=280,B=350,R=500,Q=900)
 * Piece Square Tables
 	* Vit vs Svart
 	* bonde, springare, löpare, torn, dam, kung

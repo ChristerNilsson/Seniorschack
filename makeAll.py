@@ -41,7 +41,14 @@ def wrapHtml(original, filename, t, level, content=""):
 		# '		<link rel="icon" type="image/x-icon" href="favicon.ico">',
 		'		<meta charset = "utf-8"/>'
 	]
-	for i in reversed(range(level)):
+
+	# CSS bör gälla i katalogerna nedanför den egna.
+	# Undantaget är roten, där css-filen gäller i alla fall.
+	# Hanteras med variablen start nedan.
+	# Behövs det unik css-kod i en viss fil kan den läggas in mha <style></style> i .md-filen.
+	# Denna gäller då enbart i denna enda fil.
+	start = 0 if level <= 1 else 1
+	for i in reversed(range(start,level)):
 		res.append('		<link href="' + i * '../' + 'style.css" rel="stylesheet" type="text/css" >')
 	res.append('	</head>')
 	res.append('<body>')

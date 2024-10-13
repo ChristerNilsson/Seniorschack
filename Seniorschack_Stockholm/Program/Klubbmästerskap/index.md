@@ -1,3 +1,5 @@
+[Telefonlista](https://www.seniorschackstockholm.se/htmfiler/Telefon.pdf)
+
 ## September
 
 To 12 Rond 1  

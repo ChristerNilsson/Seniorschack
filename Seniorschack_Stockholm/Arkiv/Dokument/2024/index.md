@@ -17,6 +17,8 @@
 [5. Budget för 2024](HTM/SrS_Budget_2024.pdf)  
 [6. Valberedningens förslag](HTM/SrS_Valberedningens_Förslag_2024.pdf)  
 [7. Revisionsberättelse för 2023](HTM/SrS_Revisionsberattelse_2023.pdf)  
+[Styrelsemöte nr. 5 den 8 maj 2024](HTM/Protokoll_SrS_nr5_2024.pdf)  
 [Styrelsemöte nr. 4 den 17 april 2024](HTM/Protokoll_SrS_nr4_2024.pdf)  
+[Styrelsemöte nr. 3 den 5 mars 2024](HTM/Protokoll_SrS_nr3_2024.pdf)  
 [Styrelsemöte nr. 2 den 14 februari 2024](HTM/Protokoll_SrS_nr2_2024.pdf)  
 [Styrelsemöte nr. 1 den 15 januari 2024](HTM/Protokoll_SrS_nr1_2024.pdf)  

@@ -98,11 +98,11 @@ def transpileDir(directory, level=0):
 
 	print('name',name)
 
-	if name[0:2]=='20': 
-		year = int(name) - 1
-	else:
-		year = 2023
-	md.append(f"[{year}]({year})")
+	if name == '2022': year = ''
+	elif name == '2023': year = ''
+	else: year = '2023'
+	if year != '':
+		md.append(f"[{year}]({year})")
 
 	# md.append("## Förklaring")
 	# md.append("|Typ||")

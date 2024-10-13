@@ -1,3 +1,4 @@
-[Allsvenskan](TOUR=11856)  
-[Stockholmsserien](TOUR=12714)  
-[Lag-DM](TOUR=12575)  
+[Allsvenskan](https://member.schack.se/ShowTournamentServlet?id=14266)  
+[Stockholmsserien](https://member.schack.se/ShowTournamentServlet?id=14744)  
+[Lag-DM](https://member.schack.se/ShowTournamentServlet?id=14562)  
+

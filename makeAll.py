@@ -1,12 +1,20 @@
 import os
+import sys
 import time
 from markdown_it import MarkdownIt
+
 import json
 from datetime import datetime
+from makeNews import execute
+
+execute()
 
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
 
-mdit = MarkdownIt('commonmark', {'breaks':True,'html':True}).enable('table')
+mdit = MarkdownIt('commonmark', {'breaks':False,'html':True}).enable('table')
+# print(mdit.render("*adam*"))
+# mdit.options['maxNesting'] = 100
+
 news = []
 
 with open("settings.json","r") as f:
@@ -26,7 +34,7 @@ def patch(s):
 	return s
 
 def wrapHtml(original, filename, t, level, content=""):
-	print('wrapHtml',original)
+	# print('wrapHtml',original)
 	t = title(t)
 	index = 1 + filename.rindex("/")
 	short_md = filename[index:].replace('.html','.md')
@@ -71,7 +79,7 @@ def wrapHtml(original, filename, t, level, content=""):
 	with open(filename, 'w', encoding='utf8') as g:
 		s = '\n'.join(res)
 		g.write(s)
-		print('AUTO',filename)
+		# print('AUTO',filename)
 
 def noExt(s):
 	s = s.replace("_", " ")
@@ -132,7 +140,7 @@ def transpileDir(directory, level=0):
 			elif f.name not in ['favicon.ico','style.css']:
 				if not f.name.startswith(IGNORE): hash_others.append(f)
 		else:
-			print('f.name',f.name)
+			# print('f.name',f.name)
 			if not f.name.startswith(IGNORE): hash_directory.append(f)
 
 	res = [[noExt(f.name), f.name] for f in hash_html if f.name != 'index.html'] 
@@ -140,12 +148,14 @@ def transpileDir(directory, level=0):
 	res += [[noExt(f.name), f.name] for f in hash_others] 
 	for f in hash_directory: 
 		res += [[f.name.replace("_", " "), f.name]]
-		transpileDir(f, level + 1)
+		print('f.name',f.name)
+		if f.name != 'Förklaring':
+			transpileDir(f, level + 1)
 
 	res.sort()
 	if nyheter or dokument: res.reverse()
 
-	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res ] #if title != "Nyheter"]
+	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res] # if title != "Nyheter"]
 	res = "<table>\n" + "\n".join(res) + "\n</table>"
 	if nyheter: news = res
 
@@ -159,7 +169,8 @@ def transpileDir(directory, level=0):
 def writeMD(long):
 	with open(long,encoding='utf8') as f:
 		md = f.read()
-		print('MD',long)
+		# print('MD',long)
+		# print('MD',md)
 		html = mdit.render(md)
 		html = patch(html)
 	return html
@@ -167,4 +178,5 @@ def writeMD(long):
 start = time.time_ns()
 transpileDir(ROOT)
 print(round((time.time_ns() - start)/10**6),'ms')
+print(sys.version)
 print()

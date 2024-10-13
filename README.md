@@ -76,3 +76,22 @@ This is due to VS Code showing folders before files.
 The menus in Tiny sorts folders and files together.  
 Example: Klubben
 
+## Format för filnamn och katalognamn i Nyheter
+
+```
+12345678901234
+yyyy-mm-dd_I_Inbjudan_till_turnering_på_Salongerna
+```
+Först kommer datum enligt ISO-standard.  
+Därefter kommer nyhetstyp:
+
+|Typ|Förklaring|
+|:-:|-|
+|I|Inbjudan|
+|F|Föredrag|
+|M|Meddelande|
+|R|Resultat|
+| |Övrigt|
+
+Observera att du måste byta ut blanktecken mot _ !
+

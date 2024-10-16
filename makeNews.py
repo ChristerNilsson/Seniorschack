@@ -94,7 +94,8 @@ def transpileDir(directory, level=0):
 		if typ == 'I': typ='📩'
 		if typ == 'M': typ='📢'
 		if typ == 'R': typ='🏅'
-		md.append(f"|{title[0:10]}|{typ}|[{title[13:]}]({href})|")
+		md.append(f"|{title[0:10].replace('-','‑')}|{typ}|[{title[13:]}]({href})|")
+		# pga att normalt bindestreck bryter på mobiler. Bindestrecket ovan är icke-brytande.
 
 	print('name',name)
 

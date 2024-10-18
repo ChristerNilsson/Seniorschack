@@ -14,6 +14,17 @@ Berger är den rättvisaste formen, helst dubbelrondig.
 Berger kan dock inte användas med många deltagare.   
 Då används Schweizer eller Bergergrupper.
 
+#### Poängberäkning enligt FairPair
+
+* Vid vinst erhåller man hela motståndarens elo
+* Vid remi erhåller man halva motståndarens elo
+* Dessutom sker färgkompensering
+	* Om svart vinner får han 1.02 * motståndarens elo
+	* Om vit vinner får han 0.98 * moståndarens elo
+	* Vid remi får svart 0.51 * motståndarens elo
+	* Vid remi får vit 0.49 * motståndarens elo
+	* Detta minskar risken för att två spelare hamnar på samma quality
+
 #### Invändningar mot Schweizer
 
 1. De flesta partier har stor skillnad mellan spelarna (CN)
@@ -67,10 +78,17 @@ Man behöver alltså inte möta spelare som är flera hundra elos starkare för 
 
 #### Varför sorterar Schweizer och FairPair olika ibland?
 
-Det beror på att Schweizer använder grövre metoder. 
-1. En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste
-2. FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo.  
-3. Särskiljning vid samma partipoäng.  
-	* Buchholz summerar motståndarnas poäng, även förlustpartierna. 
-		* Förlorar man mot en starkare är det bra för särskiljningen.
-	* FairPair behöver sällan särskiljning eftersom elotalen innehåller fler siffror.  
+Det beror på att Schweizer använder grövre metoder.
+
+#### Vilka är dessa grövre metoder?
+	1. En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste
+		FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo
+
+	2. FairPair lottar fram partier där chansen att vinna ligger så nära 50% som möjligt
+		* Schweizer lottar fram ojämna partier med stor elo-skillnad
+		* En elo skillnad på 0 ger 50% att vinna för den bättre spelaren
+		* 100 => 64%
+		* 200 => 76%
+		* 300 => 85%
+		* 400 => 92%
+		* 500 => 96%

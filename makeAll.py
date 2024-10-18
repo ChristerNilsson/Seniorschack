@@ -6,9 +6,6 @@ from markdown_it import MarkdownIt
 import json
 from datetime import datetime
 
-# from makeNews import execute
-# execute()
-
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
 
 mdit = MarkdownIt('commonmark', {'breaks':False,'html':True}).enable('table')

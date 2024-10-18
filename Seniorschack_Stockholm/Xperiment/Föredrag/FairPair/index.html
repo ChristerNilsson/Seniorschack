@@ -26,6 +26,20 @@ Bygger på två principer:</p>
 <p>Berger är den rättvisaste formen, helst dubbelrondig.<br />
 Berger kan dock inte användas med många deltagare.<br />
 Då används Schweizer eller Bergergrupper.</p>
+<h4>Poängberäkning enligt FairPair</h4>
+<ul>
+<li>Vid vinst erhåller man hela motståndarens elo</li>
+<li>Vid remi erhåller man halva motståndarens elo</li>
+<li>Dessutom sker färgkompensering
+<ul>
+<li>Om svart vinner får han 1.02 * motståndarens elo</li>
+<li>Om vit vinner får han 0.98 * moståndarens elo</li>
+<li>Vid remi får svart 0.51 * motståndarens elo</li>
+<li>Vid remi får vit 0.49 * motståndarens elo</li>
+<li>Detta minskar risken för att två spelare hamnar på samma quality</li>
+</ul>
+</li>
+</ul>
 <h4>Invändningar mot Schweizer</h4>
 <ol>
 <li>De flesta partier har stor skillnad mellan spelarna (CN)
@@ -79,20 +93,19 @@ En turnering med sju ronder kan alltså ge en ökning på 58 elo.<br />
 Man behöver alltså inte möta spelare som är flera hundra elos starkare för att avancera snabbt.</p>
 <h4>Varför sorterar Schweizer och FairPair olika ibland?</h4>
 <p>Det beror på att Schweizer använder grövre metoder.</p>
-<ol>
-<li>En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste</li>
-<li>FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo.</li>
-<li>Särskiljning vid samma partipoäng.
-<ul>
-<li>Buchholz summerar motståndarnas poäng, även förlustpartierna.
-<ul>
-<li>Förlorar man mot en starkare är det bra för särskiljningen.</li>
-</ul>
-</li>
-<li>FairPair behöver sällan särskiljning eftersom elotalen innehåller fler siffror.</li>
-</ul>
-</li>
-</ol>
+<h4>Vilka är dessa grövre metoder?</h4>
+<pre><code>1. En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste
+	FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo
+
+2. FairPair lottar fram partier där chansen att vinna ligger så nära 50% som möjligt
+	* Schweizer lottar fram ojämna partier med stor elo-skillnad
+	* En elo skillnad på 0 ger 50% att vinna för den bättre spelaren
+	* 100 =&gt; 64%
+	* 200 =&gt; 76%
+	* 300 =&gt; 85%
+	* 400 =&gt; 92%
+	* 500 =&gt; 96%
+</code></pre>
 
 </body>
 </html>

@@ -5,9 +5,9 @@ from markdown_it import MarkdownIt
 
 import json
 from datetime import datetime
-from makeNews import execute
 
-execute()
+# from makeNews import execute
+# execute()
 
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
 
@@ -96,6 +96,13 @@ def getLink(f):
 
 def makeMenu(href,title): return [title, href]
 
+def yymm(): return str(datetime.now())[:7]	
+
+def convert(href):
+	# title = title.replace('_',' ')
+	if href == 'Nyheter': href = f"Nyheter/{yymm()}.html"
+	return href
+
 def transpileDir(directory, level=0):
 	global news
 	if type(directory) is str:
@@ -155,7 +162,7 @@ def transpileDir(directory, level=0):
 	res.sort()
 	if nyheter or dokument: res.reverse()
 
-	res = [f"\t<tr><td><a href='{href}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res] # if title != "Nyheter"]
+	res = [f"\t<tr><td><a href='{convert(href)}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res] # if title != "Nyheter"]
 	res = "<table>\n" + "\n".join(res) + "\n</table>"
 	if nyheter: news = res
 

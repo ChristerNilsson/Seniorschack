@@ -1,6 +1,6 @@
-|Datum|[Typ](Typ)|Evenemang|
+|Datum|[Typ](../Typ)|Evenemang|
 |-|:-:|-|
-|[Förra](2024-10)||[Nästa månad](2024-12.html)|
+|[Förra](../2024-10)||[Nästa månad](../2024-12)|
 |2024-11-05|🎙️|Bengt Hammar - New York 1924 - del 1|
 |2024-11-06||Rond 8 för M1234|
 |2024-11-07||Rond 7 för Veteran|

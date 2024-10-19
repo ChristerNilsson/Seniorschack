@@ -166,9 +166,8 @@ def transpileDir(directory, level=0):
 	res = "<table>\n" + "\n".join(res) + "\n</table>"
 	if nyheter: news = res
 
-	if level == 0: 
-		res += f'<div style="font-size:16px">{str(datetime.now())[:16]}</div>'
-		# res += news
+	if level == 0:
+		res += f'<br><div style="font-size:16px">{str(datetime.now())[:16]}</div>'
 
 	indexHtml = res if indexHtml == "" else indexHtml.replace("AUTO",res)
 	if indexHtml: wrapHtml('directory ' + name, path + '/index.html', name, level+1, indexHtml)

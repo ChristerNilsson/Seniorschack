@@ -9,14 +9,20 @@
 	</head>
 <body>
 <h1><a href="index.md">2024-11</a> </h1>
+<script> 
+	function changeMonth(month) { 
+		history.replaceState(null, '', month); 
+		window.location.reload();
+	} 
+</script>
 <table>
 <thead>
 	<tr><th>Datum</th>
 <th style="text-align:center"><a href="../Typ">Typ</a></th><th>Evenemang</th></tr>
 </thead>
 <tbody>
-	<tr><td><a href="../2024-10">Förra</a></td>
-<td style="text-align:center"></td><td><a href="../2024-12">Nästa månad</a></td></tr>
+	<tr><td><a onclick="changeMonth('../2024-10')">Förra</a></td>
+<td style="text-align:center"></td><td><a onclick="changeMonth('../2024-12')">Nästa</a></td></tr>
 	<tr><td>2024-11-05</td>
 <td style="text-align:center">🎙️</td><td>Bengt Hammar - New York 1924 - del 1</td></tr>
 	<tr><td>2024-11-06</td>

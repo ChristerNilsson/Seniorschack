@@ -1,6 +1,13 @@
+<script> 
+	function changeMonth(month) { 
+		history.replaceState(null, '', month); 
+		window.location.reload();
+	} 
+</script>
+
 |Datum|[Typ](../Typ)|Evenemang|
 |-|:-:|-|
-|[Förra](../2024-09)||[Nästa månad](../2024-11)|
+|<a onclick="changeMonth('../2024-09')">Förra</a>||<a onclick="changeMonth('../2024-11')">Nästa</a>|
 |2024‑10‑01|🎙️|Gunnar Hedin - Zandor Nilsson - Självförtroende i världsklass|
 |2024-10-02||Rond 4 för M1234|
 |2024-10-03||Rond 3 för Veteran|

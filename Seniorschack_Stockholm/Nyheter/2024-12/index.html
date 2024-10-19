@@ -9,13 +9,19 @@
 	</head>
 <body>
 <h1><a href="index.md">2024-12</a> </h1>
+<script> 
+	function changeMonth(month) { 
+		history.replaceState(null, '', month); 
+		window.location.reload();
+	} 
+</script>
 <table>
 <thead>
 	<tr><th>Datum</th>
 <th style="text-align:center"><a href="../Typ">Typ</a></th><th>Evenemang</th></tr>
 </thead>
 <tbody>
-	<tr><td><a href="../2024-11">Förra</a></td>
+	<tr><td><a onclick="changeMonth('../2024-10')">Förra</a></td>
 <td style="text-align:center"></td><td></td></tr>
 	<tr><td>2024-12-03</td>
 <td style="text-align:center">🎙️</td><td>Bengt Hammar - Veteran-VM o Liren-Gukesh</td></tr>

@@ -11,8 +11,8 @@ _STYLES_
 		<table>
 			<tr cls="vinjett" height="100px">
 				<td>
-					<a href="/Seniorschack_Stockholm/Xperiment/Föredrag/Lewis_Chess_Men/">
-	 					<img height="200px" src="/Seniorschack_Stockholm/X_bilder/knight2.png" />
+					<a href="./Xperiment/Föredrag/Lewis_Chess_Men/">
+	 					<img height="200px" src="./X_bilder/knight2.png" />
 					</a>
 				</td>
 				<td><h1>Seniorschack Stockholm</h1></td>

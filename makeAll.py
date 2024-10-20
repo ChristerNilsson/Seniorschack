@@ -5,7 +5,7 @@ from markdown_it import MarkdownIt
 import json
 from datetime import datetime
 
-import dominate
+from dominate import document
 from dominate.tags import *
 
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
@@ -32,7 +32,7 @@ def wrapHtml(original, filename, t, level, content=""):
 	short_md = filename[index:].replace('.html','.md')
 	long_md = filename.replace('.html','.md')
 
-	doc = dominate.document(title=t)
+	doc = document(title=t)
 	with doc.head:
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		meta(charset = "utf-8")
@@ -55,7 +55,7 @@ def wrapHtml(original, filename, t, level, content=""):
 				h1(a(t, href=short_md))
 			else:
 				h1(t)
-		div('INSERT')
+		div('INSERT') # placeholder for content from markdown
 
 	with open(filename, 'w', encoding='utf8') as g:
 		s = doc.render()
@@ -78,7 +78,8 @@ def getLink(f):
 
 def makeMenu(href,title): return [title, href]
 
-def yymm(): return str(datetime.now())[:7]	
+def yymm():         return str(datetime.now())[:7]	
+def yymmddhhmmss(): return str(datetime.now())[:16]
 
 def convert(href):
 	# title = title.replace('_',' ')
@@ -145,7 +146,7 @@ def transpileDir(directory, level=0):
 	if nyheter: news = res
 
 	if level == 0:
-		res += f'<br><div style="font-size:16px">{str(datetime.now())[:16]}</div>'
+		res += f'<br><div style="font-size:16px">Uppdaterad {yymmddhhmmss()}</div>'
 
 	indexHtml = res if indexHtml == "" else indexHtml.replace("AUTO",res)
 	if indexHtml: wrapHtml('directory ' + name, path + '/index.html', name, level+1, indexHtml)

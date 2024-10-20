@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>_TITLE_</title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+		<meta charset="utf-8">
+		<script>function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }</script>
+_STYLES_
+	</head>
+	<body>
+		<table>
+			<tr cls="vinjett" height="100px">
+				<td>
+					<a href="/Seniorschack_Stockholm/Xperiment/Föredrag/Lewis_Chess_Men/">
+	 					<img height="200px" src="/Seniorschack_Stockholm/X_bilder/knight2.png" />
+					</a>
+				</td>
+				<td><h1>Seniorschack Stockholm</h1></td>
+			</tr>
+		</table>
+		_BODY_
+	</body>
+</html>
+

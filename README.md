@@ -95,3 +95,7 @@ Därefter kommer nyhetstyp:
 
 Observera att du måste byta ut blanktecken mot _ !
 
+## changeMonth
+
+Verkar som att funktionen måste definieras i varje månadsfil.
+

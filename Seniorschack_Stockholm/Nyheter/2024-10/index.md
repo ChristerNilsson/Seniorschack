@@ -1,10 +1,3 @@
-<script> 
-	function changeMonth(month) { 
-		history.replaceState(null, '', month); 
-		window.location.reload();
-	} 
-</script>
-
 |Datum|[Typ](../Typ)|Evenemang|
 |-|:-:|-|
 |<a onclick="changeMonth('../2024-09')">Förra</a>||<a onclick="changeMonth('../2024-11')">Nästa</a>|

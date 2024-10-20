@@ -1,4 +1,3 @@
-[Telefonlista](https://www.seniorschackstockholm.se/htmfiler/Telefon.pdf)
 
 ## September
 

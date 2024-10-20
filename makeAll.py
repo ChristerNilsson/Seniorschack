@@ -6,7 +6,6 @@ import json
 from datetime import datetime
 
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
-
 mdit = MarkdownIt('commonmark', {'breaks':False,'html':True}).enable('table')
 templates = {}
 
@@ -16,8 +15,6 @@ with open('page_start.template', 'r', encoding='utf8') as f: templates['page_sta
 with open("settings.json","r") as f:
 	settings = json.loads(f.read())
 	ROOT = settings['patches']['ROOT']
-
-def pretty(s): return s.replace('.md','').replace('_',' ')
 
 def patch(s):
 	patches = settings['patches']
@@ -66,10 +63,8 @@ def getLink(f):
 def makeMenu(href,title): return [title, href]
 def yymm():         return str(datetime.now())[:7]
 def yymmddhhmmss(): return str(datetime.now())[:16]
-
-def convert(href):
-	if href == 'Nyheter': href = f"Nyheter/{yymm()}"
-	return href
+def pretty(s): return s.replace('.md','').replace('_',' ')
+def convert(href): return f"Nyheter/{yymm()}" if href == 'Nyheter' else href
 
 def transpileDir(directory, level=0):
 	if type(directory) is str:
@@ -97,9 +92,9 @@ def transpileDir(directory, level=0):
 	for f in os.scandir(path):
 		if os.path.isfile(f) and f.name.endswith('.md'):
 			if f.name == 'index.md':
-				indexHtml = writeMD(f.path)
+				indexHtml = MD2HTML(f.path)
 			else:
-				html = writeMD(f.path)
+				html = MD2HTML(f.path)
 				if html:
 					filename = f.path.replace('.md', '.html').replace('\\', '/')
 					wrapHtml('markdown ' + f.path, filename, f.name, level + 1, html)
@@ -132,7 +127,7 @@ def transpileDir(directory, level=0):
 	indexHtml = res if indexHtml == "" else indexHtml.replace("AUTO",res)
 	if indexHtml: wrapHtml('directory ' + name, path + '/index.html', name, level+1, indexHtml)
 
-def writeMD(long):
+def MD2HTML(long):
 	with open(long,encoding='utf8') as f:
 		md = f.read()
 		html = mdit.render(md)

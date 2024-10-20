@@ -2,18 +2,12 @@ import os
 import sys
 import time
 from markdown_it import MarkdownIt
-
 import json
 from datetime import datetime
-
-# from makeNews import execute
-# execute()
 
 IGNORE = "X_" # dessa kataloger och filer ignoreras i AUTO
 
 mdit = MarkdownIt('commonmark', {'breaks':False,'html':True}).enable('table')
-# print(mdit.render("*adam*"))
-# mdit.options['maxNesting'] = 100
 
 news = []
 
@@ -34,7 +28,6 @@ def patch(s):
 	return s
 
 def wrapHtml(original, filename, t, level, content=""):
-	# print('wrapHtml',original)
 	t = title(t)
 	index = 1 + filename.rindex("/")
 	short_md = filename[index:].replace('.html','.md')
@@ -69,10 +62,10 @@ def wrapHtml(original, filename, t, level, content=""):
 
 	if level == 1:
 		res.append('<table>')
-		res.append('<tr class=vinjett height=100px><td>')
-		res.append('<a href="../Seniorschack_Stockholm/Xperiment/F%C3%B6redrag/Lewis_Chess_Men/">')
-		res.append("<img height=200px src=" + (level-1) * '../' + "X_bilder/knight2.png ></a>")
-		res.append("</td><td class=vinjett>Seniorschack Stockholm</td></tr>")
+		res.append('	<tr class=vinjett height=100px><td>')
+		res.append('		<a href="../Seniorschack_Stockholm/Xperiment/Föredrag/Lewis_Chess_Men/">')
+		res.append("			<img height=200px src=" + (level-1) * '../' + "X_bilder/knight2.png ></a>")
+		res.append("		</td><td class=vinjett>Seniorschack Stockholm</td></tr>")
 		res.append('</table>')
 	else:
 		if os.path.exists(long_md):

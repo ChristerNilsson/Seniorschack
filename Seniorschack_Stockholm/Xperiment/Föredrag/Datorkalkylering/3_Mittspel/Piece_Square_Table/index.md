@@ -1,35 +1,7 @@
-<style>
-	table {
-		border-spacing: 0;
-		border-collapse: collapse;
-		/* width: 400px;
-		height: 400px; */
-		font-size: 32px;
-		color: black;
-	}
+<div class='container'>
+<div class='box'>
 
-	th {
-		color: white;
-	}
-
-	td {
-		width: 50px;
-		height: 50px;
-	}
-
-	table tr:nth-child(even) td:nth-child(odd),
-	table tr:nth-child(odd) td:nth-child(even) {
-		background-color: #b58863; /* Mörkbruna rutor */
-	}
-
-	table tr:nth-child(even) td:nth-child(even),
-	table tr:nth-child(odd) td:nth-child(odd) {
-		background-color: #f0d9b5; /* Ljusa rutor */
-	}
-</style>
-
-Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle,  
-kan man räkna ut värdet av en viss given ställning.
+Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle, kan man räkna ut värdet av en viss given ställning.
 
 * Enkelt att införa 
 * Bra prestanda, pga inkrementell uppdatering
@@ -41,6 +13,9 @@ kan man räkna ut värdet av en viss given ställning.
 * Interpolera mellan dessa mha material,
 	* Spelöppning: 2 * (9 + 5 + 3 + 3 + 8) = 56
 	* Slutspel: 0
+
+</div>
+<div class='box'>
 
 ## Torn
 
@@ -55,6 +30,9 @@ kan man räkna ut värdet av en viss given ställning.
 | 20| 20| 20| 20| 20| 20| 20| 20|
 | 10| 10| 10| 10| 10| 10| 10| 10|
 
+</div>
+<div class='box'>
+
 ## Kung, slutspel
 
 | a | b | c | d | e | f | g | h |
@@ -68,6 +46,9 @@ kan man räkna ut värdet av en viss given ställning.
 |  8| 16| 24| 32| 32| 24| 16|  8|
 |  0|  8| 16| 18| 18| 16|  8|  0|
 
+</div>
+<div class='box'>
+
 ## Undersök!
 
 | a | b | c | d | e | f | g | h |
@@ -80,6 +61,9 @@ kan man räkna ut värdet av en viss given ställning.
 |   |   | ♔|   |   |   |   |   |
 |   |   |   |   |   |   |   |   |
 |   |   |   | ♖|   |   |   |   |
+
+</div>
+<div class='box'>
 
 * Utgående från
 	* Kc3, Rd1 (vit)
@@ -97,11 +81,17 @@ kan man räkna ut värdet av en viss given ställning.
 	* Hur få nivåer behöver användas?
 * Hur skulle du vilja förbättra matriserna ovan?
 
+</div>
+<div class='box'>
+<br>
+<br>
+
 [Schackprogram](https://christernilsson.github.io/JavaScript-Chess/)  
-[Bill Jordan](Bill_Jordan)  
+[Bill Jordan](Bill_Jordan/index.html)  
 [Simplified Evaluation Function](https://www.chessprogramming.org/Simplified_Evaluation_Function)  
 [Piece-Square Tables](https://www.chessprogramming.org/Piece-Square_Tables)  
 
-```
-♟♞♝♜♛♚     ♙♘♗♖♕♔
-```
+♟♞♝♜♛♚  
+♙♘♗♖♕♔  
+</div>
+</div>

@@ -27,8 +27,7 @@ Svag evaluering kan kompenseras med att söka djupare.
 * osv.
 
 [Minimax](minimax.html)  
-
-[Piece Square Table](Piece_Square_Table.html)  
+[Piece Square Table](Piece_Square_Table)  
 
 ### Länkar
 

@@ -30,9 +30,7 @@ def wrapHtml(original, filename, t, level, content=""):
 
 	header = f"<a href='{short_md}'>{t}</a>" if os.path.exists(long_md) else t
 
-	styles = []
-	for i in range(level):
-		styles.append(f'\t\t<link href="{'../' * i}style.css" rel="stylesheet" type="text/css" />')
+	styles = [f'\t\t<link href="{'../' * i}style.css" rel="stylesheet" type="text/css" />' for i in reversed(range(level))]
 	styles = "\n".join(styles)
 
 	if level==1: template = templates['page_start']

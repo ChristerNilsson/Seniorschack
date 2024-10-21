@@ -33,7 +33,19 @@ g3 1%
 b3 0%
 ```
 
-* Ett drag kan lagras med tre bytes.
+```
+8 U V W X Y Z - _
+7 M N O P Q R S T
+6 E F G H I J K L
+5 w x y z A B C D
+4 o p q r s t u v
+3 g h i j k l m n
+2 8 9 a b c d e f
+1 0 1 2 3 4 5 6 7
+  a b c d e f g h
+```
+
+* Ett drag kan lagras med tre bytes. e2e4 => 0cs, c7c5 => 1Oy
 	* halvdrag + frånruta + tillruta. (Procenten kan beräknas)
 	* Då ryms en miljon drag på 3 Mb.
 * Vill man variera sitt spel kan man låta slumpen spela in.

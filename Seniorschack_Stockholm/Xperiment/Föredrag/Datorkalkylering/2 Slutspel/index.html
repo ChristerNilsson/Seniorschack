@@ -17,16 +17,18 @@
 		<p>Slutspel kan hanteras utan trädsökning med upp till sju pjäser.<br />
 Dragen är perfekta.
 De räknas ut inom någon millisekund.</p>
+<p>Vi börjar med den enklaste databasen, tre pjäser (kByte):</p>
+<ul>
+<li>KBK 0.2 + 1.5 (löpare)</li>
+<li>KNK 0.2 + 0.2 (springare)</li>
+<li>KPK 16 + 17 (bonde)</li>
+<li>KQK 5.8 + 7.4 (dam)</li>
+<li><a href="http://tablebase.sesse.net/3-4-5/krk.nbb.emd">KRK black</a> och <a href="http://tablebase.sesse.net/3-4-5/krk.nbw.emd">KRK white</a> 6.9 + 6.9 (torn)</li>
+</ul>
 <p>Vi kommer här att se närmare på KRK, dvs Kung och torn mot ensam Kung.</p>
 <ul>
-<li>
-<p>Filerna http://tablebase.sesse.net/3-4-5/krk.nbb.emd och http://tablebase.sesse.net/3-4-5/krk.nbw.emd innehåller cirka 28.000 positioner.</p>
-</li>
-<li>
-<p>För varje position anges antal halvdrag till matt</p>
-</li>
-<li>
-<p>För att hitta det bästa draget måste man</p>
+<li>För varje position anges antal halvdrag till matt</li>
+<li>För att hitta det bästa draget måste man
 <ul>
 <li>Skapa alla positioner nåbara med ett halvdrag.</li>
 <li>Söka upp dessa positioner i filen och få fram antal halvdrag till matt.</li>
@@ -38,7 +40,7 @@ De räknas ut inom någon millisekund.</p>
 <div><a href="https://syzygy-tables.info/?fen=7k/8/4R3/4K3/8/8/8/8_w_-_-_0_1">Ke5 Re6 Kh8</a></div>
 <h2>Exempel på innehåll i filerna KRK</h2>
 <div><a href="KRk.txt">KRk.txt</a> visar positionerna samt antal halvdrag till matt. T ex a1a2c1 7</p>
-<p>Filerna innehåller ej dragen och är binärfiler.<br />
+<p>Filerna är binärfiler.<br />
 Man måste använda ett speciellt program där man går in med var och en av positionerna man vill slå upp. T ex returnerar Kf6, dvs &quot;f6e6h8&quot;, värdet 6.</p>
 <p>Fil implementerad som en tredimensionell kub:<br />
 64 * 64 * 64 * 1 = 262 kb</p>
@@ -58,19 +60,20 @@ Kd5 14
 <h1>Databasstorlekar</h1>
 <pre><code>Antal
 pjäser      Storlek  Klar
-3             27 kB  1975 (2 filer: KRK + KQK)
+3             62 kB  1975 (10 filer: KBK + KNK + KPK + KQK + KRK)
 4          30 MB     1985 ca
 5        1 GB        1995 ca
 6      150 GB        2005
 7    17 TB           2012
 8  2000 TB           pågår
 </code></pre>
-<p>Åtta pjäser påbörjades 2012 och beräknas ta 2000 TB i anspråk.</p>
+<p>Åtta pjäser påbörjades 2012 och beräknas ta 2000 TB i anspråk.<br />
+20 TB kostar idag (2024) cirka <a href="https://www.webhallen.com/se/product/361407-Seagate-One-Touch-Desktop-med-hubb-20TB">5.000 kr</a>.</p>
 <p>Här kan man ladda ner <a href="http://tablebase.sesse.net/3-4-5/">databaserna</a> för 3, 4 och 5 pjäser</p>
-<p>Dessa databaser vill man inte lagra på sin laptop.<br />
-Chess.com och Lichess har egna kopior av dessa databaser.<br />
-Man kan nå dessa via ett <a href="https://tablebase.lichess.ovh/standard?fen=7k/8/4R3/4K3/8/8/8/8%20w%20-%20-%200%201">API</a><br />
-Man anger sin position mha FEN och får tillbaks de möjliga dragen, sorterade bäst först.</p>
+<p>Chess.com och Lichess har egna kopior av dessa databaser.<br />
+Man anger sin position mha <a href="https://www.chess.com/terms/fen-chess">Forsyth-Edwards Notation (FEN)</a> och får tillbaks de möjliga dragen, sorterade bäst först.<br />
+(Vilken svaghet har FEN?)<br />
+Man kan nå dessa via ett <a href="https://tablebase.lichess.ovh/standard?fen=7k/8/4R3/4K3/8/8/8/8_w_-_-_0_1">Application Programming Interface (API)</a></div>
 <div><a href="https://en.wikipedia.org/wiki/Endgame_tablebase">Wikipedia</a><br />
 <a href="https://en.wikipedia.org/wiki/Ken_Thompson">Ken Thompson</a><br />
 <a href="https://web.archive.org/web/20090325093618/http://www.gadycosteff.com/eg/eg52.pdf">End Papers</a></div>

@@ -28,16 +28,15 @@ Svag evaluering kan kompenseras med att söka djupare.
 
 [Minimax](minimax.html)  
 
-[Piece Square Table](Piece_Square_Table.html)
+[Piece Square Table](Piece_Square_Table.html)  
 
 ### Länkar
 
-[Wikipedia](https://en.wikipedia.org/wiki/Kalah)
-[Kalaha](https://christernilsson.github.io/Lab/2019/118-Kalaha/)
-[Binärt Träd](X_tree.svg)
-[Nokia 3310](https://youtube.com/clip/Ugkxax12m2ISro9LvHjkgzt_ZY9GwCM0f3Vh?si=J4J9fmi1io-Wgexb)
-[Minimax - källkod](https://github.com/ChristerNilsson/Lab/blob/master/2019/118-Kalaha/coffee/minimax.coffee)
-[Chess Programming](https://www.chessprogramming.org/Main_Page)
-[Chess.stackexchange](https://chess.stackexchange.com)
-[Python Chess](https://python-chess.readthedocs.io/en/latest)
-
+[Binärt Träd](X_tree.svg)  
+[Minimax - källkod](https://github.com/ChristerNilsson/Lab/blob/master/2019/118-Kalaha/coffee/minimax.coffee)  
+[Chess Programming](https://www.chessprogramming.org/Main_Page)  
+[Chess.stackexchange](https://chess.stackexchange.com)  
+[Python Chess](https://python-chess.readthedocs.io/en/latest)  
+[Wikipedia](https://en.wikipedia.org/wiki/Kalah)  
+[Kalaha](https://christernilsson.github.io/Lab/2019/118-Kalaha/)  
+[Nokia 3310](https://youtube.com/clip/Ugkxax12m2ISro9LvHjkgzt_ZY9GwCM0f3Vh?si=J4J9fmi1io-Wgexb)  

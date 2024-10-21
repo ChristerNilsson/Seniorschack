@@ -2,9 +2,14 @@ Slutspel kan hanteras utan trädsökning med upp till sju pjäser.
 Dragen är perfekta. 
 De räknas ut inom någon millisekund.  
 
-Vi kommer här att se närmare på KRK, dvs Kung och torn mot ensam Kung.
+Vi börjar med den enklaste databasen, tre pjäser (kByte):
+* KBK 0.2 + 1.5 (löpare)
+* KNK 0.2 + 0.2 (springare)
+* KPK 16 + 17 (bonde)
+* KQK 5.8 + 7.4 (dam)
+* [KRK black](http://tablebase.sesse.net/3-4-5/krk.nbb.emd) och [KRK white](http://tablebase.sesse.net/3-4-5/krk.nbw.emd) 6.9 + 6.9 (torn)
 
-* Filerna http://tablebase.sesse.net/3-4-5/krk.nbb.emd och http://tablebase.sesse.net/3-4-5/krk.nbw.emd innehåller cirka 28.000 positioner.
+Vi kommer här att se närmare på KRK, dvs Kung och torn mot ensam Kung.
 
 * För varje position anges antal halvdrag till matt 
 * För att hitta det bästa draget måste man
@@ -20,7 +25,7 @@ Exempel
 
 [KRk.txt](KRk.txt) visar positionerna samt antal halvdrag till matt. T ex a1a2c1 7
 
-Filerna innehåller ej dragen och är binärfiler.  
+Filerna är binärfiler.  
 Man måste använda ett speciellt program där man går in med var och en av positionerna man vill slå upp. T ex returnerar Kf6, dvs "f6e6h8", värdet 6.  
 
 Fil implementerad som en tredimensionell kub:  
@@ -47,7 +52,7 @@ Kd5 14
 ```
 Antal
 pjäser      Storlek  Klar
-3             27 kB  1975 (2 filer: KRK + KQK)
+3             62 kB  1975 (10 filer: KBK + KNK + KPK + KQK + KRK)
 4          30 MB     1985 ca
 5        1 GB        1995 ca
 6      150 GB        2005
@@ -55,14 +60,15 @@ pjäser      Storlek  Klar
 8  2000 TB           pågår
 ```
 
-Åtta pjäser påbörjades 2012 och beräknas ta 2000 TB i anspråk.
+Åtta pjäser påbörjades 2012 och beräknas ta 2000 TB i anspråk.  
+20 TB kostar idag (2024) cirka [5.000 kr](https://www.webhallen.com/se/product/361407-Seagate-One-Touch-Desktop-med-hubb-20TB).  
 
 Här kan man ladda ner [databaserna](http://tablebase.sesse.net/3-4-5/) för 3, 4 och 5 pjäser
 
-Dessa databaser vill man inte lagra på sin laptop.  
 Chess.com och Lichess har egna kopior av dessa databaser.  
-Man kan nå dessa via ett [API](https://tablebase.lichess.ovh/standard?fen=7k/8/4R3/4K3/8/8/8/8%20w%20-%20-%200%201)  
-Man anger sin position mha FEN och får tillbaks de möjliga dragen, sorterade bäst först.
+Man anger sin position mha [Forsyth-Edwards Notation (FEN)](https://www.chess.com/terms/fen-chess) och får tillbaks de möjliga dragen, sorterade bäst först.  
+(Vilken svaghet har FEN?)  
+Man kan nå dessa via ett [Application Programming Interface (API)](https://tablebase.lichess.ovh/standard?fen=7k/8/4R3/4K3/8/8/8/8_w_-_-_0_1)  
 
 [Wikipedia](https://en.wikipedia.org/wiki/Endgame_tablebase)  
 [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)  

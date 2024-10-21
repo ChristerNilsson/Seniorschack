@@ -108,3 +108,12 @@ Lägg märke till att Stockfish sökt igenom tretton miljoner ställningar per s
 och gått igenom 32 nivåer i trädet.  
 
 ![Lichess](Minimax.png)
+
+# Övningar 
+
+### pi : 3141 | 5926
+
+### e: 2718 | 2818 | 2845 | 9045
+
+### gyllene snittet: 1618 | 0339 | 8874 | 9894 | 8482 | 0458 | 6834 | 3656
+

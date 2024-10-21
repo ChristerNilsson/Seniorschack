@@ -14,10 +14,56 @@
 	</head>
 	<body>
 		<h1><a href='Piece_Square_Table.md'>Piece Square Table</a></h1>
-		<h2>Torn</h2>
+		<style>
+	table {
+		border-spacing: 0;
+		border-collapse: collapse;
+		/* width: 400px;
+		height: 400px; */
+		font-size: 32px;
+		color: black;
+	}
+
+	th {
+		color: white;
+	}
+
+	td {
+		width: 50px;
+		height: 50px;
+	}
+
+	table tr:nth-child(even) td:nth-child(odd),
+	table tr:nth-child(odd) td:nth-child(even) {
+		background-color: #b58863; /* Mörkbruna rutor */
+	}
+
+	table tr:nth-child(even) td:nth-child(even),
+	table tr:nth-child(odd) td:nth-child(odd) {
+		background-color: #f0d9b5; /* Ljusa rutor */
+	}
+</style>
+<p>Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle,<br />
+kan man räkna ut värdet av en viss given ställning.</p>
+<ul>
+<li>Enkelt att införa</li>
+<li>Bra prestanda, pga inkrementell uppdatering</li>
+<li>Brädets rutor = 64</li>
+<li>Antal olika pjäser = 6</li>
+<li>Antal färger = 2</li>
+<li>En tabell för öppning, en för slutspel = 2</li>
+<li>Totalt ger detta 64 * 6 * 2 * 2 = 1536 heltal</li>
+<li>Interpolera mellan dessa mha material,
+<ul>
+<li>Spelöppning: 2 * (9 + 5 + 3 + 3 + 8) = 56</li>
+<li>Slutspel: 0</li>
+</ul>
+</li>
+</ul>
+<h2>Torn</h2>
 <table>
 <thead>
-	<tr><th></th>
+	<tr>
 <th style="text-align:center">a</th>
 <th style="text-align:center">b</th>
 <th style="text-align:center">c</th>
@@ -28,7 +74,7 @@
 <th style="text-align:center">h</th></tr>
 </thead>
 <tbody>
-	<tr><td>8</td>
+	<tr>
 <td style="text-align:center">4</td>
 <td style="text-align:center">4</td>
 <td style="text-align:center">4</td>
@@ -37,7 +83,7 @@
 <td style="text-align:center">4</td>
 <td style="text-align:center">4</td>
 <td style="text-align:center">4</td></tr>
-	<tr><td>7</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
@@ -46,7 +92,7 @@
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td></tr>
-	<tr><td>6</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
@@ -55,7 +101,7 @@
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td></tr>
-	<tr><td>5</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
@@ -64,7 +110,7 @@
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td></tr>
-	<tr><td>4</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
@@ -73,7 +119,7 @@
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td></tr>
-	<tr><td>3</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
@@ -82,7 +128,7 @@
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">0</td></tr>
-	<tr><td>2</td>
+	<tr>
 <td style="text-align:center">20</td>
 <td style="text-align:center">20</td>
 <td style="text-align:center">20</td>
@@ -91,7 +137,7 @@
 <td style="text-align:center">20</td>
 <td style="text-align:center">20</td>
 <td style="text-align:center">20</td></tr>
-	<tr><td>1</td>
+	<tr>
 <td style="text-align:center">10</td>
 <td style="text-align:center">10</td>
 <td style="text-align:center">10</td>
@@ -105,7 +151,7 @@
 <h2>Kung, slutspel</h2>
 <table>
 <thead>
-	<tr><th></th>
+	<tr>
 <th style="text-align:center">a</th>
 <th style="text-align:center">b</th>
 <th style="text-align:center">c</th>
@@ -116,7 +162,7 @@
 <th style="text-align:center">h</th></tr>
 </thead>
 <tbody>
-	<tr><td>8</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">8</td>
 <td style="text-align:center">16</td>
@@ -125,7 +171,7 @@
 <td style="text-align:center">16</td>
 <td style="text-align:center">8</td>
 <td style="text-align:center">0</td></tr>
-	<tr><td>7</td>
+	<tr>
 <td style="text-align:center">8</td>
 <td style="text-align:center">16</td>
 <td style="text-align:center">24</td>
@@ -134,7 +180,7 @@
 <td style="text-align:center">24</td>
 <td style="text-align:center">16</td>
 <td style="text-align:center">8</td></tr>
-	<tr><td>6</td>
+	<tr>
 <td style="text-align:center">16</td>
 <td style="text-align:center">24</td>
 <td style="text-align:center">32</td>
@@ -143,7 +189,7 @@
 <td style="text-align:center">32</td>
 <td style="text-align:center">24</td>
 <td style="text-align:center">16</td></tr>
-	<tr><td>5</td>
+	<tr>
 <td style="text-align:center">25</td>
 <td style="text-align:center">32</td>
 <td style="text-align:center">40</td>
@@ -152,7 +198,7 @@
 <td style="text-align:center">40</td>
 <td style="text-align:center">32</td>
 <td style="text-align:center">25</td></tr>
-	<tr><td>4</td>
+	<tr>
 <td style="text-align:center">25</td>
 <td style="text-align:center">32</td>
 <td style="text-align:center">40</td>
@@ -161,7 +207,7 @@
 <td style="text-align:center">40</td>
 <td style="text-align:center">32</td>
 <td style="text-align:center">25</td></tr>
-	<tr><td>3</td>
+	<tr>
 <td style="text-align:center">16</td>
 <td style="text-align:center">24</td>
 <td style="text-align:center">32</td>
@@ -170,7 +216,7 @@
 <td style="text-align:center">32</td>
 <td style="text-align:center">24</td>
 <td style="text-align:center">16</td></tr>
-	<tr><td>2</td>
+	<tr>
 <td style="text-align:center">8</td>
 <td style="text-align:center">16</td>
 <td style="text-align:center">24</td>
@@ -179,7 +225,7 @@
 <td style="text-align:center">24</td>
 <td style="text-align:center">16</td>
 <td style="text-align:center">8</td></tr>
-	<tr><td>1</td>
+	<tr>
 <td style="text-align:center">0</td>
 <td style="text-align:center">8</td>
 <td style="text-align:center">16</td>
@@ -191,6 +237,93 @@
 </tbody>
 </table>
 <h2>Undersök!</h2>
+<table>
+<thead>
+	<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">c</th>
+<th style="text-align:center">d</th>
+<th style="text-align:center">e</th>
+<th style="text-align:center">f</th>
+<th style="text-align:center">g</th>
+<th style="text-align:center">h</th></tr>
+</thead>
+<tbody>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">♚</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">♔</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+	<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">♖</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td></tr>
+</tbody>
+</table>
 <ul>
 <li>
 <p>Utgående från</p>
@@ -227,6 +360,12 @@
 <p>Hur skulle du vilja förbättra matriserna ovan?</p>
 </li>
 </ul>
+<div><a href="https://christernilsson.github.io/JavaScript-Chess/">Schackprogram</a><br />
+<a href="Bill_Jordan">Bill Jordan</a><br />
+<a href="https://www.chessprogramming.org/Simplified_Evaluation_Function">Simplified Evaluation Function</a><br />
+<a href="https://www.chessprogramming.org/Piece-Square_Tables">Piece-Square Tables</a></div>
+<pre><code>♟♞♝♜♛♚     ♙♘♗♖♕♔
+</code></pre>
 
 	</body>
 </html>

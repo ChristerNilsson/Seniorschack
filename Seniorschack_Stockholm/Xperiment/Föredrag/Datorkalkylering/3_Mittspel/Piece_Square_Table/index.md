@@ -19,7 +19,8 @@ Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle, ka
 
 ## Torn
 
-| a | b | c | d | e | f | g | h |
+<!-- | a | b | c | d | e | f | g | h | -->
+|||||||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |  4|  4|  4|  6|  6|  4|  4|  4|
 |  0|  0|  0|  0|  0|  0|  0|  0|
@@ -35,7 +36,7 @@ Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle, ka
 
 ## Kung, slutspel
 
-| a | b | c | d | e | f | g | h |
+|||||||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |  0|  8| 16| 18| 18| 16|  8|  0|
 |  8| 16| 24| 32| 32| 24| 16|  8|
@@ -51,7 +52,7 @@ Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle, ka
 
 ## Undersök!
 
-| a | b | c | d | e | f | g | h |
+<!-- | a | b | c | d | e | f | g | h |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |
@@ -60,7 +61,9 @@ Genom att ge ett värde för varje pjäs på varje ruta vid varje tillfälle, ka
 |   |   |   |   |   |   |   |   |
 |   |   | ♔|   |   |   |   |   |
 |   |   |   |   |   |   |   |   |
-|   |   |   | ♖|   |   |   |   |
+|   |   |   | ♖|   |   |   |   | -->
+<img src="https://lichess1.org/export/fen.gif?fen=8/8/5k2/8/8/2K5/8/3R4 w - - 0 1" alt="Stamma board" style="width:auto; height:428px;">
+
 
 </div>
 <div class='box'>

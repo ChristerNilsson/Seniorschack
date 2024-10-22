@@ -50,3 +50,12 @@ e<sup>iπ</sup> = -1
 | Move Focus Forward  | Tab         |
 | Move Focus Backward | Shift + Tab |
 
+### Visa en position mha html
+
+<img src="https://lichess1.org/export/fen.gif?fen=8/8/5k2/8/8/2K5/8/3R4 w - - 0 1" alt="" style="width:auto; height:200px;">
+<img src="https://lichess1.org/export/fen.gif?fen=8/8/5k2/8/8/2K5/8/3R4 w - - 0 1" alt="" style="width:auto; height:300px;">
+<img src="https://lichess1.org/export/fen.gif?fen=8/8/5k2/8/8/2K5/8/3R4 w - - 0 1" alt="" style="width:auto; height:400px;">
+
+### Dick Öhman - Christer Nilsson remi 2024
+
+<iframe width="600" height="371" src="https://lichess.org/study/embed/4D1Jqoe4/f1iFjr0n" frameborder=0></iframe>

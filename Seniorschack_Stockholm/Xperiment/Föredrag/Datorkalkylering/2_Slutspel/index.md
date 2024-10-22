@@ -70,8 +70,10 @@ Man anger sin position mha [Forsyth-Edwards Notation (FEN)](https://www.chess.co
 (Vilken svaghet har FEN?)  
 Man kan nå dessa via ett [Application Programming Interface (API)](https://tablebase.lichess.ovh/standard?fen=7k/8/4R3/4K3/8/8/8/8_w_-_-_0_1)  
 
+
+
 [Wikipedia](https://en.wikipedia.org/wiki/Endgame_tablebase)  
 [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)  
 [End Papers](https://web.archive.org/web/20090325093618/http://www.gadycosteff.com/eg/eg52.pdf)  
 
-[Stamma 1737](https://syzygy-tables.info/?fen=8/1p6/8/2P1B3/8/8/p2K4/1k6_w_-_-_0_1)
+[Stamma 1737](https://syzygy-tables.info/?fen=8/1p6/8/2P1B3/8/8/p2K4/1k6_w_-_-_0_1)  

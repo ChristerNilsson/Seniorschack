@@ -2,7 +2,7 @@ root = true
 
 
 # Matches multiple files with brace expansion notation
-[*]
+[*.py]
 charset = utf-8
 indent_style = tab
 tab_width = 4

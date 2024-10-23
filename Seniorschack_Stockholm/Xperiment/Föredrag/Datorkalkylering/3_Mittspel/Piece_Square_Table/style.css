@@ -4,12 +4,12 @@ table {
 	/* width: 400px;
 	height: 400px; */
 	font-size: 32px;
-	color: black;
+	/* color: black; */
 }
 
-th {
+/* th {
 	color: white;
-}
+} */
 
 td {
 	width: 50px;
@@ -35,7 +35,7 @@ table tr:nth-child(odd) td:nth-child(odd) {
 .box {
 	flex: 1 1 25%;
 	/* text-align: center; */
-	background-color: black;
+	/* background-color: black; */
 }
 @media (max-width: 2000px) {.box {flex: 1 1 33%;}}
 @media (max-width: 1500px) {.box {flex: 1 1 50%;}}

@@ -5,10 +5,28 @@
 		<title>Seniorschack Stockholm</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 		<meta charset="utf-8">
-		<script>function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }</script>
+		<script>
+			function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }
+			function setStorage(key,value){
+				document.body.setAttribute(key, value);
+				localStorage.setItem(key, value);
+			}
+			function setDefault(key,value) {
+				if (localStorage.getItem(key) == null) {
+					setStorage(key,value)
+				} else {
+					setStorage(key, localStorage.getItem(key))
+				}
+			}
+		</script>
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+		<script>
+			setDefault('theme','dark')
+			setDefault('fontsize','20px')
+			setDefault('font','Helvetica')
+		</script>
 		<table>
 			<tr cls="vinjett" height="100px">
 				<td>
@@ -22,6 +40,7 @@
 		<table>
 			<tr><td><a href='Arkiv'>Arkiv</a></td></tr>
 			<tr><td><a href='Externa_länkar'>Externa länkar</a></td></tr>
+			<tr><td><a href='Inställningar'>Inställningar</a></td></tr>
 			<tr><td><a href='Klubben'>Klubben</a></td></tr>
 			<tr><td><a href='Kontakt'>Kontakt</a></td></tr>
 			<tr><td><a href='Nyheter/2024-10'>Nyheter</a></td></tr>
@@ -30,7 +49,7 @@
 			<tr><td><a href='Resultat'>Resultat</a></td></tr>
 			<tr><td><a href='Xperiment'>Xperiment</a></td></tr>
 		</table>
-		<br><div style="font-size:16px">Uppdaterad 2024-10-22 20:53</div>
+		<br><div style="font-size:16px">Uppdaterad 2024-10-23 17:06</div>
 	</body>
 </html>
 

@@ -1,8 +1,31 @@
+a:hover { cursor: pointer; }
+
+body[theme='light'] { background-color: white; color:black}
+body[theme='light'] a { color: red; }
+
+body[theme="dark"] { background-color: black; color: white; }
+body[theme="dark"] a { color: yellow; }
+
+body[theme="special"] { background-color: yellow; color: black; }
+body[theme="special"] a { color: red; }
+
+body[fontsize="12"] { font-size: 12px }
+body[fontsize="14"] { font-size: 14px }
+body[fontsize="16"] { font-size: 16px }
+body[fontsize="18"] { font-size: 18px }
+body[fontsize="20"] { font-size: 20px }
+body[fontsize="22"] { font-size: 22px }
+body[fontsize="24"] { font-size: 24px }
+
+body[font='Helvetica'] { font-family: 'Helvetica'}
+body[font='Courier New'] { font-family: 'Courier New'}
+body[font='Times New Roman'] { font-family: 'Times New Roman'}
+
 body {
 	color:white; 
 	background-color: black; 
 	font-family:helvetica; 
-	font-size:24px;
+	/* font-size:24px; */
 }
 
 a:hover {
@@ -13,13 +36,38 @@ a {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-decoration:none; 
-	color:yellow; 
-	background-color: black;
+	/* color:yellow;  */
+	/* background-color: black; */
 }
 
+h1[theme='light'] { background-color: white; color:black}
+h1[theme='light'] a { color: black; }
+
+h1[theme="dark"] { background-color: black; color: white; }
+h1[theme="dark"] a { color: white; }
+
+h1[theme="special"] { background-color: yellow; color: black; }
+h1[theme="special"] a { color: black; }
+
+h2[theme='light'] { background-color: white; color:black}
+h2[theme='light'] a { color: black; }
+
+h2[theme="dark"] { background-color: black; color: white; }
+h2[theme="dark"] a { color: white; }
+
+h2[theme="special"] { background-color: yellow; color: black; }
+h2[theme="special"] a { color: black; }
+
 h1 a {
-	color:white; 
-	background-color: black; 
+	/* color:white;  */
+	/* background-color: black;  */
+	margin-bottom: 0px;
+}
+
+
+h1 a {
+	/* color:white;  */
+	/* background-color: black;  */
 	margin-bottom: 0px;
 }
 
@@ -28,21 +76,21 @@ h1 a {
 } */
 
 table {
-	font-size:24px;
+	/* font-size:24px; */
 	margin-top: 0px;
 }
 
 th {
 	border: 1px solid darkgray; 
-	color:white;
+	/* color:white; */
 	padding-left:5px; 
 	padding-right:5px; 
 }
 
-td {
-	border: 1px solid black; 
-	background-color: black;
-}
+/* td { */
+	/* border: 1px solid black;  */
+	/* background-color: black; */
+/* } */
 
 sup {
 	font-size:16px;
@@ -51,8 +99,8 @@ sup {
 .vinjett {
 	font-size: 10vh;
 	/* font-weight: 5;  */
-	background-color: black;
-	color: white; 
+	/* background-color: black; */
+	/* color: white;  */
 }
 
 red { color: red; }

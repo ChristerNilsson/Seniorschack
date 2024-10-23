@@ -5,12 +5,31 @@
 		<title>Resultat i snabbschack</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 		<meta charset="utf-8">
-		<script>function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }</script>
+		<script>
+			function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }
+			function setStorage(key,value){
+				document.body.setAttribute(key, value);
+				localStorage.setItem(key, value);
+			}
+			function setDefault(key,value) {
+				if (localStorage.getItem(key) == null) {
+					setStorage(key,value)
+				} else {
+					setStorage(key, localStorage.getItem(key))
+				}
+			}
+		</script>
 		<link href="../../style.css" rel="stylesheet" type="text/css" />
 		<link href="../style.css" rel="stylesheet" type="text/css" />
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+		<script>
+			setDefault('theme','dark')
+			setDefault('fontsize','20px')
+			setDefault('font','Helvetica')
+		</script>
+
 		<h1><a href='Resultat_i_snabbschack.md'>Resultat i snabbschack</a></h1>
 		<table>
 <thead>

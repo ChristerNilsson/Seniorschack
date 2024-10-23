@@ -5,13 +5,32 @@
 		<title>Minimax</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 		<meta charset="utf-8">
-		<script>function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }</script>
+		<script>
+			function changeMonth(month) { history.replaceState(null, '', month); window.location.reload() }
+			function setStorage(key,value){
+				document.body.setAttribute(key, value);
+				localStorage.setItem(key, value);
+			}
+			function setDefault(key,value) {
+				if (localStorage.getItem(key) == null) {
+					setStorage(key,value)
+				} else {
+					setStorage(key, localStorage.getItem(key))
+				}
+			}
+		</script>
 		<link href="../../../style.css" rel="stylesheet" type="text/css" />
 		<link href="../../style.css" rel="stylesheet" type="text/css" />
 		<link href="../style.css" rel="stylesheet" type="text/css" />
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+		<script>
+			setDefault('theme','dark')
+			setDefault('fontsize','20px')
+			setDefault('font','Helvetica')
+		</script>
+
 		<h1><a href='index.md'>Minimax</a></h1>
 		<p>1928: <a href="https://en.wikipedia.org/wiki/John_von_Neumann#Game_theory">John von Neumann</a><br />
 1945: <a href="https://link.springer.com/chapter/10.1007/978-3-031-39876-6_12">Konrad Zuse</a> (Oklart om minimax användes)<br />

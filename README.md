@@ -11,7 +11,7 @@
 
 * You have a choice between using directories and files or markdown files or a combination of both
 	* markdown files gives you the opportunity to show the alternatives in any order.
-	* markdown files are also uses to add text, pictures and more.
+	* markdown files are also used to add text, pictures and more.
 	* You can specify a link using a .link file.
 		* The name of the file will be displayed to the user.
 		* The .link file contains a link or an url.
@@ -99,3 +99,17 @@ Observera att du måste byta ut blanktecken mot _ !
 
 Verkar som att funktionen måste definieras i varje månadsfil.
 
+## Filer med filtypen .auto
+
+Om man inte är nöjd med den automatiska genereringen, kan man döpa om .auto-filen till .md och redigera den själv.  
+(Gäller ej .auto närmast roten eftersom den innehåller ett klockslag)
+
+## Vad gör makeAll.py?
+
+* Generatorn binder ihop alla kataloger och filer så att man kommer åt dem via rotens index.html
+* Detta sker genom att skapa html-filer och auto-filer
+* Auto-filerna kan aktiveras genom att döpa om dem till .md och redigera dem.
+* Ser till style.css kaskadanropas. Lägsta css-filen har högst prioritet.
+* Använder templates. Den ena används för roten.
+* Byter ut vissa strångar mot andra.
+* Sortera menyerna alfabetiskt.

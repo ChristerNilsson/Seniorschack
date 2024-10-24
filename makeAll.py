@@ -93,6 +93,7 @@ def transpileDir(directory, level=0):
 
 	for f in os.scandir(path):
 		if os.path.isfile(f):
+			if f.name.endswith('.auto'): continue
 			if f.name.endswith('.md'): pass
 			elif f.name.endswith('.html'): hash_html.append(f)
 			elif f.name.endswith('.link'): hash_link.append(f)
@@ -110,12 +111,20 @@ def transpileDir(directory, level=0):
 	res.sort()
 	if nyheter or dokument: res.reverse()
 
-	res = [f"\t\t\t<tr><td><a href='{convert(href)}'>{title.replace('_',' ')}</a></td></tr>" for [title,href] in res]
-	res = "<table>\n" + "\n".join(res) + "\n\t\t</table>"
+	res = [f"[{title.replace('_',' ')}]({convert(href)})  " for [title,href] in res]
+	if level == 0: res.append(f'<p style="font-size:16px;">Uppdaterad {yymmddhhmmss()}</p>')
+		
+	res = "\n".join(res)
 
-	if level == 0: res += f'\n\t\t<br><div style="font-size:16px">Uppdaterad {yymmddhhmmss()}</div>'
+	if len(res) > 0: 
+		with open(path + '/index.auto',"w", encoding='utf8') as g: g.write(res)
+
+	res = md_2_html(res)
+
 	indexHtml = res if indexHtml == "" else indexHtml.replace("AUTO",res)
 	if indexHtml: wrapHtml('directory ' + name, path + '/index.html', name, level+1, indexHtml)
+
+def md_2_html(md): return patch(mdit.render(md))
 
 def MD2HTML(long): 
 	with open(long,encoding='utf8') as f: return patch(mdit.render(f.read()))

@@ -81,15 +81,16 @@ Man behöver alltså inte möta spelare som är flera hundra elos starkare för 
 Det beror på att Schweizer använder grövre metoder.
 
 #### Vilka är dessa grövre metoder?
-	1. En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste
-		FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo
 
-	2. FairPair lottar fram partier där chansen att vinna ligger så nära 50% som möjligt
-		* Schweizer lottar fram ojämna partier med stor elo-skillnad
-		* En elo skillnad på 0 ger 50% att vinna för den bättre spelaren
-		* 100 => 64%
-		* 200 => 76%
-		* 300 => 85%
-		* 400 => 91%
-		* 500 => 95%
-		* 600 => 97%
+1. En vinst är alltid exakt en poäng oavsett om man slagit den bäste eller den sämste
+	* FairPair använder maximal information och summerar partipoäng viktat med motståndarens elo
+
+2. FairPair lottar fram partier där chansen att vinna ligger så nära 50% som möjligt
+	* Schweizer lottar fram ojämna partier med stor elo-skillnad
+	* En elo skillnad på 0 ger 50% chans att vinna för den bättre spelaren
+	* 100 => 64%
+	* 200 => 76%
+	* 300 => 85%
+	* 400 => 91%
+	* 500 => 95%
+	* 600 => 97%

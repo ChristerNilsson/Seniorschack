@@ -23,3 +23,9 @@ Länkar:
 * [Foto](https://storage.googleapis.com/bildbank2/index.html?md5=AvOBdpHx20)
 * [Sveriges Schackförbund](https://member.schack.se/ViewPlayerRatingDiagram?memberid=716556)
 * [Lichess](https://lichess.org/study/4D1Jqoe4)
+
+Partier:
+
+### Christer Nilsson - Lars-Erik Åberg 0-1
+
+<iframe width="600" height="371" src="https://lichess.org/study/embed/4D1Jqoe4/7WCpJuG6" frameborder=0></iframe>

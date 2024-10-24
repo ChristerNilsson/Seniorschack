@@ -1,6 +1,6 @@
-|Datum|[Typ](../Typ)|Evenemang|
+|December|[Typ](../Typ)|Evenemang|
 |-|:-:|-|
 |<a onclick="changeMonth('../2024-11')">Förra</a>|||
-|2024-12-03|🎙️|Bengt Hammar - Veteran-VM o Liren-Gukesh|
-|2024-12-04||Rond 11 för M123|
-|2024-12-05||Rond 10 för Veteran|
+|03 tis|🎙️|Bengt Hammar - Veteran-VM o Liren-Gukesh|
+|04 ons||Rond 11 för M123|
+|05 tor||Rond 10 för Veteran|
